@@ -1,7 +1,8 @@
 body {
     margin: 0;
-   padding: 0;
-   background-color: rgb(255, 255, 255);
+    padding: 0;
+    background-color: #36648B;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .menu ul, li {
@@ -10,21 +11,58 @@ body {
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
     padding: 10px;
+    padding-left: 30px;
 
 }
 
-.menu ul, li {
+.menu ul, li{
     display: inline;
-    padding-left: 55px;
-    padding-top: 45px;
-    padding-right: 75px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-left: 65px;
+    padding-right: 5x;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu img {
-    padding-left: 125px;
-    width: 145px;
-    height: 90px;
+    padding-left: 20px;
+    width: 180px;
+    height: 120px;
     padding-top: 20px;
+}
+
+.banner {
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+.banner > h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.banner > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    flex-direction: row-reverse;
+    flex-wrap: row wrap;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    max-width: 100%;
+    box-sizing: border-box;
 }
